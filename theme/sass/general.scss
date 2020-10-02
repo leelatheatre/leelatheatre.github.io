@@ -37,6 +37,12 @@ header {
   left: 0;
   height: 90px;
   z-index: 100;
+  .navbar {
+    background-color: transparent !important;
+    @media only screen and (max-width: 767px) {
+      background-color: rgba(27,29,47,1) !important;
+    }
+  }
   .container {
     height: 100%;
     display: flex;
@@ -44,9 +50,9 @@ header {
     flex-wrap: nowrap;
   }
   a {
-    color: #fff;
+    color: #fff !important;
     &:hover {
-      color: #fb3a64;
+      color: #fb3a64 !important;
       text-decoration: none;
     }
   }
@@ -59,7 +65,9 @@ header {
     list-style: none;
     li {
       height: 100%;
-      padding: 10px 15px;
+      @media only screen and (min-width: 768px) {
+        padding: 10px 15px;
+      }
       a {
         font-size: 0.8rem;
         font-weight: 700;
@@ -67,8 +75,9 @@ header {
         height: 100%;
         display: flex;
         align-items: center;
+        color: #fff !important;
         &:hover {
-          color: #fb3a64;
+          color: #fb3a64 !important;
           text-decoration: none;
         }
       }
@@ -157,6 +166,32 @@ header {
     text-transform: uppercase;
     &:hover {
       color: #fff;
+    }
+  }
+}
+
+footer {
+  background: #fb3a64;
+  padding: 50px 0;
+}
+
+.social-icons {
+  a {
+    font-size: 0;
+    height: 32px;
+    width: 32px;
+    background: url("../images/icons/facebook.png") no-repeat center;
+    background-size: 100%;
+    display: inline-block;
+    margin: 5px;
+    &.li {
+      background-image: url("../images/icons/linkedin.png")
+    }
+    &.tw {
+      background-image: url("../images/icons/twitter.png")
+    }
+    &.yt {
+      background-image: url("../images/icons/youtube.png")
     }
   }
 }
