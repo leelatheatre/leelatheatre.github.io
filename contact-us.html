@@ -51,9 +51,25 @@
         </nav>
       </div>
     </header>
-    <div class="main-container dark-section">
+    <div class="main-container image-section">
       <div class="container">
         <div class="block-title text-center"><h1>Contact Us</h1></div>
+        <div class="contact-form">
+          <form action="#" id="contactForm" method="post" class="validateform" novalidate="novalidate">
+            <div class="form-element form-item-name">
+      				<input type="text" placeholder="Your Name" name="Name" id="Name" class="reginput input_full">
+            </div>
+            <div class="form-element form-item-email">
+      				<input type="text" placeholder="Your Email" name="Email" id="Email" class="reginput input_full">
+            </div>
+            <div class="form-element form-item-msg">
+      				<textarea class="input_full" placeholder="Your Message" name="Message" id="Message" data-rule="maxlen:30" data-msg="This field is required"></textarea>
+            </div>
+            <div class="form-item-submit">
+              <input type="submit" value="SEND EMAIL">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <footer id="footer">
