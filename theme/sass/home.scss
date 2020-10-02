@@ -1,0 +1,42 @@
+.big-banner {
+  .banner-slides {
+    .item {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      .container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+      h2 {
+        font-size: 3.2rem;
+        text-shadow: 1px 1px 10px #000;
+      }
+    }
+  }
+}
+
+.team-members-slider {
+  .item {
+    padding: 0 15px;
+    text-align: center;
+    a {
+      display: inline-block;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+      .name {
+        margin: 5px 0 10px;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+      .designation {
+        color: #fff;
+      }
+    }
+  }
+}

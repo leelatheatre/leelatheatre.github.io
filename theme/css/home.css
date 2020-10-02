@@ -1,0 +1,44 @@
+/* line 3, ../sass/home.scss */
+.big-banner .banner-slides .item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* line 9, ../sass/home.scss */
+.big-banner .banner-slides .item .container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+/* line 14, ../sass/home.scss */
+.big-banner .banner-slides .item h2 {
+  font-size: 3.2rem;
+  text-shadow: 1px 1px 10px #000;
+}
+
+/* line 23, ../sass/home.scss */
+.team-members-slider .item {
+  padding: 0 15px;
+  text-align: center;
+}
+/* line 26, ../sass/home.scss */
+.team-members-slider .item a {
+  display: inline-block;
+  width: 100%;
+}
+/* line 29, ../sass/home.scss */
+.team-members-slider .item a img {
+  width: 100%;
+}
+/* line 32, ../sass/home.scss */
+.team-members-slider .item a .name {
+  margin: 5px 0 10px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+/* line 37, ../sass/home.scss */
+.team-members-slider .item a .designation {
+  color: #fff;
+}
