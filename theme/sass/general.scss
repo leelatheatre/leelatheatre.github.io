@@ -37,11 +37,13 @@ header {
   left: 0;
   height: 90px;
   z-index: 100;
+  @media only screen and (max-width: 991px) {
+    background-color: rgba(27,29,47,1) !important;
+    height: auto;
+  }
   .navbar {
     background-color: transparent !important;
-    @media only screen and (max-width: 767px) {
-      background-color: rgba(27,29,47,1) !important;
-    }
+    width: 100% !important;
   }
   .container {
     height: 100%;

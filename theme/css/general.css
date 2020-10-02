@@ -45,33 +45,35 @@ header {
   height: 90px;
   z-index: 100;
 }
-/* line 40, ../sass/general.scss */
-header .navbar {
-  background-color: transparent !important;
-}
-@media only screen and (max-width: 767px) {
-  /* line 40, ../sass/general.scss */
-  header .navbar {
+@media only screen and (max-width: 991px) {
+  /* line 30, ../sass/general.scss */
+  header {
     background-color: #1b1d2f !important;
+    height: auto;
   }
 }
-/* line 46, ../sass/general.scss */
+/* line 44, ../sass/general.scss */
+header .navbar {
+  background-color: transparent !important;
+  width: 100% !important;
+}
+/* line 48, ../sass/general.scss */
 header .container {
   height: 100%;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
 }
-/* line 52, ../sass/general.scss */
+/* line 54, ../sass/general.scss */
 header a {
   color: #fff !important;
 }
-/* line 54, ../sass/general.scss */
+/* line 56, ../sass/general.scss */
 header a:hover {
   color: #fb3a64 !important;
   text-decoration: none;
 }
-/* line 59, ../sass/general.scss */
+/* line 61, ../sass/general.scss */
 header ul {
   height: 100%;
   margin: 0;
@@ -80,17 +82,17 @@ header ul {
   align-items: center;
   list-style: none;
 }
-/* line 66, ../sass/general.scss */
+/* line 68, ../sass/general.scss */
 header ul li {
   height: 100%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 66, ../sass/general.scss */
+  /* line 68, ../sass/general.scss */
   header ul li {
     padding: 10px 15px;
   }
 }
-/* line 71, ../sass/general.scss */
+/* line 73, ../sass/general.scss */
 header ul li a {
   font-size: 0.8rem;
   font-weight: 700;
@@ -100,17 +102,17 @@ header ul li a {
   align-items: center;
   color: #fff !important;
 }
-/* line 79, ../sass/general.scss */
+/* line 81, ../sass/general.scss */
 header ul li a:hover {
   color: #fb3a64 !important;
   text-decoration: none;
 }
 
-/* line 88, ../sass/general.scss */
+/* line 90, ../sass/general.scss */
 .block-title {
   padding: 0;
 }
-/* line 90, ../sass/general.scss */
+/* line 92, ../sass/general.scss */
 .block-title h2 {
   position: relative;
   font-size: 3rem;
@@ -118,12 +120,12 @@ header ul li a:hover {
   margin-bottom: 40px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 90, ../sass/general.scss */
+  /* line 92, ../sass/general.scss */
   .block-title h2 {
     font-size: 2rem;
   }
 }
-/* line 98, ../sass/general.scss */
+/* line 100, ../sass/general.scss */
 .block-title h2:after {
   position: absolute;
   background-color: #fb3a64;
@@ -135,7 +137,7 @@ header ul li a:hover {
   content: "";
 }
 
-/* line 111, ../sass/general.scss */
+/* line 113, ../sass/general.scss */
 .full-height-section {
   padding: 50px 0;
   min-height: 100vh;
@@ -144,19 +146,19 @@ header ul li a:hover {
   flex-wrap: nowrap;
 }
 
-/* line 119, ../sass/general.scss */
+/* line 121, ../sass/general.scss */
 .pink-text {
   color: #fb3a64 !important;
 }
 
-/* line 123, ../sass/general.scss */
+/* line 125, ../sass/general.scss */
 .add-overlay {
   position: relative;
   background: url("../images/banner3.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
-/* line 128, ../sass/general.scss */
+/* line 130, ../sass/general.scss */
 .add-overlay:before {
   content: "";
   position: absolute;
@@ -167,16 +169,16 @@ header ul li a:hover {
   background-color: rgba(7, 11, 42, 0.9);
 }
 
-/* line 139, ../sass/general.scss */
+/* line 141, ../sass/general.scss */
 .dark-section {
   background: #121421 !important;
 }
 
-/* line 143, ../sass/general.scss */
+/* line 145, ../sass/general.scss */
 .view-more-btn {
   text-align: center;
 }
-/* line 145, ../sass/general.scss */
+/* line 147, ../sass/general.scss */
 .view-more-btn a {
   display: inline-block;
   padding: 10px 25px;
@@ -185,36 +187,36 @@ header ul li a:hover {
   border: 2px solid #fb3a64;
   line-height: 1;
 }
-/* line 152, ../sass/general.scss */
+/* line 154, ../sass/general.scss */
 .view-more-btn a:hover {
   background: transparent;
   color: #fb3a64;
 }
 
-/* line 159, ../sass/general.scss */
+/* line 161, ../sass/general.scss */
 .view-more {
   text-align: center;
   margin-top: 40px;
 }
-/* line 162, ../sass/general.scss */
+/* line 164, ../sass/general.scss */
 .view-more a {
   display: inline-block;
   color: #fb3a64;
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 167, ../sass/general.scss */
+/* line 169, ../sass/general.scss */
 .view-more a:hover {
   color: #fff;
 }
 
-/* line 173, ../sass/general.scss */
+/* line 175, ../sass/general.scss */
 footer {
   background: #fb3a64;
   padding: 50px 0;
 }
 
-/* line 179, ../sass/general.scss */
+/* line 181, ../sass/general.scss */
 .social-icons a {
   font-size: 0;
   height: 32px;
@@ -224,15 +226,15 @@ footer {
   display: inline-block;
   margin: 5px;
 }
-/* line 187, ../sass/general.scss */
+/* line 189, ../sass/general.scss */
 .social-icons a.li {
   background-image: url("../images/icons/linkedin.png");
 }
-/* line 190, ../sass/general.scss */
+/* line 192, ../sass/general.scss */
 .social-icons a.tw {
   background-image: url("../images/icons/twitter.png");
 }
-/* line 193, ../sass/general.scss */
+/* line 195, ../sass/general.scss */
 .social-icons a.yt {
   background-image: url("../images/icons/youtube.png");
 }
