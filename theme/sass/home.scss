@@ -13,6 +13,9 @@
       }
       h2 {
         font-size: 3.2rem;
+        @media only screen and (max-width: 767px) {
+          font-size: 2rem;
+        }
         text-shadow: 1px 1px 10px #000;
       }
     }
@@ -20,6 +23,13 @@
 }
 
 .team-members-slider {
+  padding: 0 10px;
+  .slick-prev {
+    left: -10px;
+  }
+  .slick-next {
+    right: -10px;
+  }
   .item {
     padding: 0 15px;
     text-align: center;
