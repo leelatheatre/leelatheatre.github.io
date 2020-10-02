@@ -89,7 +89,7 @@ header {
 
 .block-title {
   padding: 0;
-  h2 {
+  h2, h1 {
     position: relative;
     font-size: 3rem;
     padding-bottom: 25px;
@@ -151,6 +151,7 @@ header {
     color: #fff;
     border: 2px solid #fb3a64;
     line-height: 1;
+    font-size: 0.8rem;
     &:hover {
       background: transparent;
       color: #fb3a64;
@@ -166,6 +167,7 @@ header {
     color: #fb3a64;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 3px;
     &:hover {
       color: #fff;
     }
@@ -194,6 +196,39 @@ footer {
     }
     &.yt {
       background-image: url("../images/icons/youtube.png")
+    }
+  }
+}
+
+.main-container, .section {
+  padding: 50px 0;
+}
+
+body:not(.front) {
+  padding-top: 90px;
+  #header {
+    background-color: rgba(27,29,47,1) !important;
+  }
+  .block-title h1 {
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+}
+
+.team-list {
+  .team-box {
+    background: #1d2031;
+    margin-bottom: 40px;
+    padding: 20px;
+    .image {
+      float: left;
+      padding-right: 15px;
+    }
+    .text {
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
     }
   }
 }
