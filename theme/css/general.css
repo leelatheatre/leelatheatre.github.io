@@ -516,3 +516,14 @@ body:not(.front) .block-title h1 {
 .content-popup .text .category.director, .content-popup .text .author.director, .content-popup .text .director.director {
   margin-bottom: 5px;
 }
+
+/* line 446, ../sass/general.scss */
+.copyright {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+/* line 454, ../sass/general.scss */
+.team-list-main .team-box .text p:first-of-type {
+  font-size: 0.8rem;
+}

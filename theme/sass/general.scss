@@ -442,3 +442,18 @@ body:not(.front) {
     }
   }
 }
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+.team-list-main {
+  .team-box {
+    .text {
+      p:first-of-type {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
