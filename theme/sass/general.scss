@@ -224,6 +224,12 @@ body:not(.front) {
 }
 
 .team-list {
+  .view-more-btn {
+    text-align: left;
+    a {
+      border-radius: 20px;
+    }
+  }
   .team-box {
     background: #1d2031;
     margin-bottom: 40px;
@@ -231,6 +237,8 @@ body:not(.front) {
     .image {
       float: left;
       padding-right: 15px;
+      padding-bottom: 10px;
+      max-width: 140px;
     }
     .text {
       h2 {
@@ -340,6 +348,7 @@ body:not(.front) {
       margin: 0;
       li {
         margin: 10px;
+        margin-bottom: 20px;
         display: inline-block;
         a {
           padding: 8px 25px;
@@ -366,6 +375,18 @@ body:not(.front) {
       margin: 20px;
       transition: all 0.3s ease-out 0s;
       -webkit-transition: all 0.3s ease-out 0s;
+      @media only screen and (max-width: 991px) {
+        width: calc(50% - 40px);
+      }
+      @media only screen and (max-width: 991px) {
+        width: calc(50% - 30px);
+        margin: 15px;
+      }
+      @media only screen and (max-width: 540px) {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+      }
       &:hover {
         h2, p {
           color: $pink;
@@ -393,11 +414,16 @@ body:not(.front) {
   max-width: 800px;
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
   padding: 30px;
+  max-height: 95vh;
   .image {
     max-width: 290px;
     float: left;
     padding-right: 15px;
     padding-bottom: 15px;
+    @media only screen and (max-width: 767px) {
+      float: none;
+      padding-right: 0;
+    }
   }
   .text {
     h2 {
