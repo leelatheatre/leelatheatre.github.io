@@ -5,7 +5,7 @@ $text: #707281;
 
 body {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: $text;
   background: $blue;
   @media only screen and (max-width: 767px) {
@@ -13,7 +13,7 @@ body {
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-weight: 900;
+    font-weight: 700;
     color: #fff;
   }
   img {
@@ -127,13 +127,17 @@ header {
   flex-wrap: nowrap;
 }
 
+.normal-section {
+  padding: 50px 0;
+}
+
 .pink-text {
   color: $pink !important;
 }
 
 .add-overlay {
   position: relative;
-  background: url("../images/banner3.jpg") no-repeat;
+  background: url("../images/banner.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
   &:before {
@@ -230,6 +234,9 @@ body:not(.front) {
 .team-list {
   .view-more-btn {
     text-align: left;
+    @media only screen and (max-width: 640px) {
+      text-align: center;
+    }
     a {
       border-radius: 20px;
     }
@@ -238,16 +245,41 @@ body:not(.front) {
     background: #1d2031;
     margin-bottom: 40px;
     padding: 20px;
+    font-size: 0;
+    .image, .text {
+      @media only screen and (min-width: 641px) {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
     .image {
-      float: left;
-      padding-right: 15px;
-      padding-bottom: 10px;
-      max-width: 140px;
+      img {
+        width: 140px;
+      }
+      @media only screen and (min-width: 641px) {
+        padding-right: 15px;
+      }
     }
     .text {
+      font-size: 1rem;
       h2 {
         font-size: 1.2rem;
         font-weight: 700;
+      }
+      @media only screen and (min-width: 641px) {
+        width: calc(100% - 155px);
+      }
+    }
+    @media only screen and (max-width: 640px) {
+      h2 {
+        text-align: center;
+      }
+      .image {
+        text-align: center;
+        margin-bottom: 10px;
+        img {
+          margin: auto;
+        }
       }
     }
   }
@@ -323,7 +355,7 @@ body:not(.front) {
 }
 
 .image-section {
-  background: url("../images/banner3.jpg") no-repeat;
+  background: url("../images/banner.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -457,6 +489,9 @@ body:not(.front) {
     .text {
       p:first-of-type {
         font-size: 0.8rem;
+        @media only screen and (max-width: 640px) {
+          text-align: center;
+        }
       }
     }
   }

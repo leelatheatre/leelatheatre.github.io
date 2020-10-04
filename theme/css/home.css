@@ -35,49 +35,64 @@
 }
 /* line 32, ../sass/home.scss */
 .big-banner .banner-slides .item h2 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
+  text-align: center;
+  width: 100%;
   text-shadow: 1px 1px 10px #000;
 }
 @media only screen and (max-width: 767px) {
   /* line 32, ../sass/home.scss */
   .big-banner .banner-slides .item h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
-/* line 43, ../sass/home.scss */
+/* line 45, ../sass/home.scss */
 .team-members-slider {
   padding: 0 10px;
 }
-/* line 45, ../sass/home.scss */
+/* line 47, ../sass/home.scss */
 .team-members-slider .slick-prev {
   left: -10px;
 }
-/* line 48, ../sass/home.scss */
+/* line 50, ../sass/home.scss */
 .team-members-slider .slick-next {
   right: -10px;
 }
-/* line 51, ../sass/home.scss */
+/* line 53, ../sass/home.scss */
 .team-members-slider .item {
   padding: 0 15px;
   text-align: center;
 }
-/* line 54, ../sass/home.scss */
+/* line 56, ../sass/home.scss */
 .team-members-slider .item a {
   display: inline-block;
   width: 100%;
 }
-/* line 57, ../sass/home.scss */
+/* line 59, ../sass/home.scss */
 .team-members-slider .item a img {
   width: 100%;
 }
-/* line 60, ../sass/home.scss */
+/* line 62, ../sass/home.scss */
 .team-members-slider .item a .name {
   margin: 5px 0 10px;
   color: #fff;
   font-size: 1.2rem;
 }
-/* line 65, ../sass/home.scss */
+/* line 67, ../sass/home.scss */
 .team-members-slider .item a .designation {
   color: #fff;
+}
+
+/* line 74, ../sass/home.scss */
+.vision-mission-inner {
+  padding: 15px;
+  background: rgba(29, 34, 60, 0.5);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media only screen and (min-width: 768px) {
+  /* line 74, ../sass/home.scss */
+  .vision-mission-inner {
+    height: 100%;
+  }
 }

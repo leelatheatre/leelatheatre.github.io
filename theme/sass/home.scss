@@ -30,9 +30,11 @@
         align-items: center;
       }
       h2 {
-        font-size: 3.2rem;
+        font-size: 2.8rem;
+        text-align: center;
+        width: 100%;
         @media only screen and (max-width: 767px) {
-          font-size: 2rem;
+          font-size: 1.6rem;
         }
         text-shadow: 1px 1px 10px #000;
       }
@@ -66,5 +68,14 @@
         color: #fff;
       }
     }
+  }
+}
+
+.vision-mission-inner {
+  padding: 15px;
+  background: rgba(29, 34, 60, 0.5);
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+  @media only screen and (min-width: 768px) {
+    height: 100%;
   }
 }
