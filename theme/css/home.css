@@ -1,62 +1,83 @@
 /* line 3, ../sass/home.scss */
+.big-banner .banner-slides .slick-prev, .big-banner .banner-slides .slick-next {
+  background: url(../images/icons/arrow-left.png) no-repeat;
+  height: 40px;
+  width: 20px;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+/* line 10, ../sass/home.scss */
+.big-banner .banner-slides .slick-prev:before, .big-banner .banner-slides .slick-next:before {
+  content: none;
+}
+/* line 14, ../sass/home.scss */
+.big-banner .banner-slides .slick-prev {
+  left: 10px;
+}
+/* line 17, ../sass/home.scss */
+.big-banner .banner-slides .slick-next {
+  right: 10px;
+  background-image: url(../images/icons/arrow-right.png);
+}
+/* line 21, ../sass/home.scss */
 .big-banner .banner-slides .item {
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
-/* line 9, ../sass/home.scss */
+/* line 27, ../sass/home.scss */
 .big-banner .banner-slides .item .container {
   display: flex;
   height: 100%;
   align-items: center;
 }
-/* line 14, ../sass/home.scss */
+/* line 32, ../sass/home.scss */
 .big-banner .banner-slides .item h2 {
   font-size: 3.2rem;
   text-shadow: 1px 1px 10px #000;
 }
 @media only screen and (max-width: 767px) {
-  /* line 14, ../sass/home.scss */
+  /* line 32, ../sass/home.scss */
   .big-banner .banner-slides .item h2 {
     font-size: 2rem;
   }
 }
 
-/* line 25, ../sass/home.scss */
+/* line 43, ../sass/home.scss */
 .team-members-slider {
   padding: 0 10px;
 }
-/* line 27, ../sass/home.scss */
+/* line 45, ../sass/home.scss */
 .team-members-slider .slick-prev {
   left: -10px;
 }
-/* line 30, ../sass/home.scss */
+/* line 48, ../sass/home.scss */
 .team-members-slider .slick-next {
   right: -10px;
 }
-/* line 33, ../sass/home.scss */
+/* line 51, ../sass/home.scss */
 .team-members-slider .item {
   padding: 0 15px;
   text-align: center;
 }
-/* line 36, ../sass/home.scss */
+/* line 54, ../sass/home.scss */
 .team-members-slider .item a {
   display: inline-block;
   width: 100%;
 }
-/* line 39, ../sass/home.scss */
+/* line 57, ../sass/home.scss */
 .team-members-slider .item a img {
   width: 100%;
 }
-/* line 42, ../sass/home.scss */
+/* line 60, ../sass/home.scss */
 .team-members-slider .item a .name {
   margin: 5px 0 10px;
   color: #fff;
   font-size: 1.2rem;
 }
-/* line 47, ../sass/home.scss */
+/* line 65, ../sass/home.scss */
 .team-members-slider .item a .designation {
   color: #fff;
 }

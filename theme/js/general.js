@@ -17,6 +17,18 @@
         }
       });
     }
+    if ($(".big-banner .banner-slides").length) {
+      $(".big-banner .banner-slides").not('.slick-initialized').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        speed: 300,
+      });
+    }
     if ($(".team-members-slider").length) {
       $(".team-members-slider").not('.slick-initialized').slick({
 				dots: false,

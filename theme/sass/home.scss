@@ -1,11 +1,29 @@
 .big-banner {
   .banner-slides {
+    .slick-prev, .slick-next {
+      background: url(../images/icons/arrow-left.png) no-repeat;
+      height: 40px;
+      width: 20px;
+      background-position: center;
+      background-size: cover;
+      z-index: 1;
+      &:before {
+        content: none;
+      }
+    }
+    .slick-prev {
+      left: 10px;
+    }
+    .slick-next {
+      right: 10px;
+      background-image: url(../images/icons/arrow-right.png);
+    }
     .item {
       height: 100vh;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: fixed;
+      // background-attachment: fixed;
       .container {
         display: flex;
         height: 100%;
