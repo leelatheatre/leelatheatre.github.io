@@ -23,6 +23,9 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      @media only screen and (max-width: 767px) {
+        height: 80vh;
+      }
       // background-attachment: fixed;
       .container {
         display: flex;

@@ -27,13 +27,19 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 27, ../sass/home.scss */
+@media only screen and (max-width: 767px) {
+  /* line 21, ../sass/home.scss */
+  .big-banner .banner-slides .item {
+    height: 80vh;
+  }
+}
+/* line 30, ../sass/home.scss */
 .big-banner .banner-slides .item .container {
   display: flex;
   height: 100%;
   align-items: center;
 }
-/* line 32, ../sass/home.scss */
+/* line 35, ../sass/home.scss */
 .big-banner .banner-slides .item h2 {
   font-size: 2.8rem;
   text-align: center;
@@ -41,57 +47,57 @@
   text-shadow: 1px 1px 10px #000;
 }
 @media only screen and (max-width: 767px) {
-  /* line 32, ../sass/home.scss */
+  /* line 35, ../sass/home.scss */
   .big-banner .banner-slides .item h2 {
     font-size: 1.6rem;
   }
 }
 
-/* line 45, ../sass/home.scss */
+/* line 48, ../sass/home.scss */
 .team-members-slider {
   padding: 0 10px;
 }
-/* line 47, ../sass/home.scss */
+/* line 50, ../sass/home.scss */
 .team-members-slider .slick-prev {
   left: -10px;
 }
-/* line 50, ../sass/home.scss */
+/* line 53, ../sass/home.scss */
 .team-members-slider .slick-next {
   right: -10px;
 }
-/* line 53, ../sass/home.scss */
+/* line 56, ../sass/home.scss */
 .team-members-slider .item {
   padding: 0 15px;
   text-align: center;
 }
-/* line 56, ../sass/home.scss */
+/* line 59, ../sass/home.scss */
 .team-members-slider .item a {
   display: inline-block;
   width: 100%;
 }
-/* line 59, ../sass/home.scss */
+/* line 62, ../sass/home.scss */
 .team-members-slider .item a img {
   width: 100%;
 }
-/* line 62, ../sass/home.scss */
+/* line 65, ../sass/home.scss */
 .team-members-slider .item a .name {
   margin: 5px 0 10px;
   color: #fff;
   font-size: 1.2rem;
 }
-/* line 67, ../sass/home.scss */
+/* line 70, ../sass/home.scss */
 .team-members-slider .item a .designation {
   color: #fff;
 }
 
-/* line 74, ../sass/home.scss */
+/* line 77, ../sass/home.scss */
 .vision-mission-inner {
   padding: 15px;
   background: rgba(29, 34, 60, 0.5);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media only screen and (min-width: 768px) {
-  /* line 74, ../sass/home.scss */
+  /* line 77, ../sass/home.scss */
   .vision-mission-inner {
     height: 100%;
   }
