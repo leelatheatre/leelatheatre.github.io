@@ -111,6 +111,10 @@ header {
       left: 0;
       width: 120px;
       content: "";
+      @media only screen and (max-width: 767px) {
+        font-size: 2rem;
+        width: 80px;
+      }
     }
   }
 }
@@ -211,15 +215,15 @@ footer {
 
 body:not(.front) {
   padding-top: 90px;
-  @media only screen and (max-width: 991px) {
-    padding-top: 56px;
-  }
   #header {
     background-color: rgba(27,29,47,1) !important;
   }
   .block-title h1 {
     display: inline-block;
     margin-bottom: 50px;
+  }
+  .main-container {
+    min-height: calc(100vh - 281px);
   }
 }
 
@@ -456,4 +460,20 @@ body:not(.front) {
       }
     }
   }
+}
+
+body {
+  nav.navbar {
+    padding: 5px 1rem;
+  }
+  .navbar-brand {
+    padding: 0;
+  }
+  .logo {
+    height: 80px;
+  }
+}
+
+.thank-you {
+  font-size: 1.3rem;
 }
