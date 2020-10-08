@@ -587,20 +587,24 @@ body:not(.front) .main-container {
 }
 
 /* line 502, ../sass/general.scss */
+body p {
+  text-align: justify !important;
+}
+/* line 505, ../sass/general.scss */
 body nav.navbar {
   padding: 5px 1rem;
 }
-/* line 505, ../sass/general.scss */
+/* line 508, ../sass/general.scss */
 body .navbar-brand {
   padding: 0;
 }
-/* line 508, ../sass/general.scss */
+/* line 511, ../sass/general.scss */
 body .logo {
   height: 80px;
   width: auto;
 }
 
-/* line 514, ../sass/general.scss */
+/* line 517, ../sass/general.scss */
 .thank-you {
   font-size: 1.3rem;
 }

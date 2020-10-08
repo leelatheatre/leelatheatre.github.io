@@ -499,6 +499,9 @@ body:not(.front) {
 }
 
 body {
+  p {
+    text-align: justify !important;
+  }
   nav.navbar {
     padding: 5px 1rem;
   }
