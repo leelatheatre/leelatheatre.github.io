@@ -597,9 +597,10 @@ body .navbar-brand {
 /* line 508, ../sass/general.scss */
 body .logo {
   height: 80px;
+  width: auto;
 }
 
-/* line 513, ../sass/general.scss */
+/* line 514, ../sass/general.scss */
 .thank-you {
   font-size: 1.3rem;
 }
