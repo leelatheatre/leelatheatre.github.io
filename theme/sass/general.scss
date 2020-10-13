@@ -517,3 +517,100 @@ body {
 .thank-you {
   font-size: 1.3rem;
 }
+
+.panga {
+  h5 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+    &:before {
+      content: "";
+      font-size: 10px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      background: #eee;
+      color: #fb3a64;
+      border-radius: 50%;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      transition: all 0.5s;
+    }
+    &:after {
+      content: "";
+      width: 10px;
+      height: 5px;
+      border-left: 2px solid;
+      position: absolute;
+      border-bottom: 2px solid;
+      transform: rotate(-45deg);
+      left: 5px;
+      top: 6px;
+      border-color: #fb3a64;
+    }
+  }
+  .event-tabs {
+    margin: 50px 0;
+    h6 {
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: #37948a;
+      &.second {
+        color: #f7d677;
+      }
+      &.third {
+        color: #f6a564;
+      }
+    }
+    .tab-content {
+      margin-top: 40px;
+    }
+    ul.nav-tabs {
+      border: 0 !important;
+      li {
+        width: 33.33%;
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+        }
+        a {
+          border: 2px solid #37948a !important;
+          text-align: center;
+          padding: 60px 0;
+          font-size: 1.2rem;
+          border-radius: 0;
+          background: transparent;
+          color: #37948a;
+          @media only screen and (max-width: 767px) {
+            padding: 30px 0;
+          }
+        }
+        &:nth-child(2) {
+          a {
+            color: #f7d677;
+            border: 2px solid #f7d677 !important;
+          }
+        }
+        &:nth-child(3) {
+          a {
+            color: #f6a564;
+            border: 2px solid #f6a564 !important;
+          }
+        }
+        a.active {
+          background: #37948a;
+          color: #20353c;
+          &.second {
+            background: #f7d677;
+          }
+          &.third {
+            background: #f6a564;
+          }
+        }
+      }
+    }
+  }
+}
