@@ -158,7 +158,7 @@ header {
 
 .view-more-btn {
   text-align: center;
-  a {
+  a, button {
     display: inline-block;
     padding: 10px 25px;
     background: $pink;
@@ -166,9 +166,11 @@ header {
     border: 2px solid $pink;
     line-height: 1;
     font-size: 0.8rem;
-    &:hover {
+    &:hover, &:focus {
+      border: 2px solid $pink;
       background: transparent;
       color: $pink;
+      box-shadow: none;
     }
   }
 }
@@ -210,6 +212,9 @@ footer {
     }
     &.yt {
       background-image: url("../images/icons/youtube.png")
+    }
+    &.instagram {
+      background-image: url("../images/icons/instagram.png")
     }
   }
 }
@@ -519,12 +524,13 @@ body {
 }
 
 .panga {
-  h5 {
+  .panga-common-rules p {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 15px;
     position: relative;
     padding-left: 25px;
+    color: #ddd;
     &:before {
       content: "";
       font-size: 10px;
@@ -612,5 +618,44 @@ body {
         }
       }
     }
+  }
+}
+
+.panga-poster {
+  img {
+    max-width: 500px;
+    width: 100%;
+    border: 5px solid #ddd;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+  }
+}
+
+.panga-common-rules {
+  background: #232638;
+  padding: 15px;
+  .view-more-btn {
+    display: inline-block;
+    margin: 0 5px;
+    margin-top: 20px;
+    a, button {
+      border-radius: 20px;
+      font-size: 1rem;
+    }
+  }
+}
+
+.panga-paynow-popup {
+  .view-more-btn {
+    display: inline-block;
+    margin: 0 5px;
+    margin-top: 20px;
+    a, button {
+      border-radius: 20px;
+      font-size: 1rem;
+    }
+  }
+  img {
+    max-width: 230px;
+    width: 100%;
   }
 }

@@ -191,7 +191,7 @@ header ul li a:hover {
   text-align: center;
 }
 /* line 161, ../sass/general.scss */
-.view-more-btn a {
+.view-more-btn a, .view-more-btn button {
   display: inline-block;
   padding: 10px 25px;
   background: #fb3a64;
@@ -201,17 +201,19 @@ header ul li a:hover {
   font-size: 0.8rem;
 }
 /* line 169, ../sass/general.scss */
-.view-more-btn a:hover {
+.view-more-btn a:hover, .view-more-btn a:focus, .view-more-btn button:hover, .view-more-btn button:focus {
+  border: 2px solid #fb3a64;
   background: transparent;
   color: #fb3a64;
+  box-shadow: none;
 }
 
-/* line 176, ../sass/general.scss */
+/* line 178, ../sass/general.scss */
 .view-more {
   text-align: center;
   margin-top: 40px;
 }
-/* line 179, ../sass/general.scss */
+/* line 181, ../sass/general.scss */
 .view-more a {
   display: inline-block;
   color: #fb3a64;
@@ -219,18 +221,18 @@ header ul li a:hover {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-/* line 185, ../sass/general.scss */
+/* line 187, ../sass/general.scss */
 .view-more a:hover {
   color: #fff;
 }
 
-/* line 191, ../sass/general.scss */
+/* line 193, ../sass/general.scss */
 footer {
   background: #fb3a64;
   padding: 50px 0;
 }
 
-/* line 197, ../sass/general.scss */
+/* line 199, ../sass/general.scss */
 .social-icons a {
   font-size: 0;
   height: 32px;
@@ -240,57 +242,61 @@ footer {
   display: inline-block;
   margin: 5px;
 }
-/* line 205, ../sass/general.scss */
+/* line 207, ../sass/general.scss */
 .social-icons a.li {
   background-image: url("../images/icons/linkedin.png");
 }
-/* line 208, ../sass/general.scss */
+/* line 210, ../sass/general.scss */
 .social-icons a.tw {
   background-image: url("../images/icons/twitter.png");
 }
-/* line 211, ../sass/general.scss */
+/* line 213, ../sass/general.scss */
 .social-icons a.yt {
   background-image: url("../images/icons/youtube.png");
 }
+/* line 216, ../sass/general.scss */
+.social-icons a.instagram {
+  background-image: url("../images/icons/instagram.png");
+}
 
-/* line 217, ../sass/general.scss */
+/* line 222, ../sass/general.scss */
 .main-container, .section {
   padding: 50px 0;
 }
 
-/* line 221, ../sass/general.scss */
+/* line 226, ../sass/general.scss */
 body:not(.front) {
   padding-top: 90px;
 }
-/* line 223, ../sass/general.scss */
+/* line 228, ../sass/general.scss */
 body:not(.front) #header {
   background-color: #1b1d2f !important;
 }
-/* line 226, ../sass/general.scss */
+/* line 231, ../sass/general.scss */
 body:not(.front) .block-title h1 {
   display: inline-block;
   margin-bottom: 50px;
 }
-/* line 230, ../sass/general.scss */
+/* line 235, ../sass/general.scss */
 body:not(.front) .main-container {
   min-height: calc(100vh - 281px);
 }
 
-/* line 236, ../sass/general.scss */
+/* line 241, ../sass/general.scss */
 .team-list .view-more-btn {
   text-align: left;
 }
 @media only screen and (max-width: 640px) {
-  /* line 236, ../sass/general.scss */
+  /* line 241, ../sass/general.scss */
   .team-list .view-more-btn {
     text-align: center;
   }
 }
-/* line 241, ../sass/general.scss */
+/* line 246, ../sass/general.scss */
 .team-list .view-more-btn a {
   border-radius: 20px;
 }
-/* line 245, ../sass/general.scss */
+/* line 250, ../sass/general.scss */
 .team-list .team-box {
   background: #1d2031;
   margin-bottom: 40px;
@@ -298,71 +304,71 @@ body:not(.front) .main-container {
   font-size: 0;
 }
 @media only screen and (min-width: 641px) {
-  /* line 250, ../sass/general.scss */
+  /* line 255, ../sass/general.scss */
   .team-list .team-box .image, .team-list .team-box .text {
     display: inline-block;
     vertical-align: top;
   }
 }
-/* line 257, ../sass/general.scss */
+/* line 262, ../sass/general.scss */
 .team-list .team-box .image img {
   width: 140px;
 }
 @media only screen and (min-width: 641px) {
-  /* line 256, ../sass/general.scss */
+  /* line 261, ../sass/general.scss */
   .team-list .team-box .image {
     padding-right: 15px;
   }
 }
-/* line 264, ../sass/general.scss */
+/* line 269, ../sass/general.scss */
 .team-list .team-box .text {
   font-size: 1rem;
 }
-/* line 266, ../sass/general.scss */
+/* line 271, ../sass/general.scss */
 .team-list .team-box .text h2 {
   font-size: 1.2rem;
   font-weight: 700;
 }
 @media only screen and (min-width: 641px) {
-  /* line 264, ../sass/general.scss */
+  /* line 269, ../sass/general.scss */
   .team-list .team-box .text {
     width: calc(100% - 155px);
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 275, ../sass/general.scss */
+  /* line 280, ../sass/general.scss */
   .team-list .team-box h2 {
     text-align: center;
   }
-  /* line 278, ../sass/general.scss */
+  /* line 283, ../sass/general.scss */
   .team-list .team-box .image {
     text-align: center;
     margin-bottom: 10px;
   }
-  /* line 281, ../sass/general.scss */
+  /* line 286, ../sass/general.scss */
   .team-list .team-box .image img {
     margin: auto;
   }
 }
 
-/* line 290, ../sass/general.scss */
+/* line 295, ../sass/general.scss */
 .section-content h2 {
   font-weight: 700;
   font-size: 1.3rem;
 }
-/* line 293, ../sass/general.scss */
+/* line 298, ../sass/general.scss */
 .section-content h2 strong {
   font-weight: 700;
 }
 
-/* line 299, ../sass/general.scss */
+/* line 304, ../sass/general.scss */
 .horizontal-separator {
   margin: 30px 0;
   position: relative;
   display: inline-block;
   width: 100%;
 }
-/* line 304, ../sass/general.scss */
+/* line 309, ../sass/general.scss */
 .horizontal-separator:after {
   position: absolute;
   bottom: 0;
@@ -373,18 +379,18 @@ body:not(.front) .main-container {
   background: #575555;
 }
 
-/* line 316, ../sass/general.scss */
+/* line 321, ../sass/general.scss */
 .contact-form form {
   margin: auto;
   max-width: 600px;
   background: rgba(29, 34, 60, 0.2);
   padding: 30px;
 }
-/* line 321, ../sass/general.scss */
+/* line 326, ../sass/general.scss */
 .contact-form form .form-element {
   margin-bottom: 30px;
 }
-/* line 323, ../sass/general.scss */
+/* line 328, ../sass/general.scss */
 .contact-form form .form-element input, .contact-form form .form-element textarea {
   background-color: transparent;
   border-width: 0;
@@ -394,12 +400,12 @@ body:not(.front) .main-container {
   border-color: #292b3c !important;
   color: #707281;
 }
-/* line 331, ../sass/general.scss */
+/* line 336, ../sass/general.scss */
 .contact-form form .form-element input:focus, .contact-form form .form-element textarea:focus {
   border-color: #fb3a64 !important;
   outline: 0 !important;
 }
-/* line 338, ../sass/general.scss */
+/* line 343, ../sass/general.scss */
 .contact-form form .form-item-submit input {
   transition: all 0.3s ease-out 0s;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -412,20 +418,20 @@ body:not(.front) .main-container {
   border-color: #292b3c !important;
   font-size: 0.8rem;
 }
-/* line 349, ../sass/general.scss */
+/* line 354, ../sass/general.scss */
 .contact-form form .form-item-submit input:hover {
   background-color: #fb3a64;
   border-color: #fb3a64 !important;
 }
 
-/* line 358, ../sass/general.scss */
+/* line 363, ../sass/general.scss */
 .image-section {
   background: url("../images/banner.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
 }
-/* line 363, ../sass/general.scss */
+/* line 368, ../sass/general.scss */
 .image-section:before {
   content: "";
   position: absolute;
@@ -436,51 +442,51 @@ body:not(.front) .main-container {
   background-color: rgba(18, 20, 33, 0.9);
   z-index: 1;
 }
-/* line 373, ../sass/general.scss */
+/* line 378, ../sass/general.scss */
 .image-section > * {
   position: relative;
   z-index: 2;
 }
 
-/* line 380, ../sass/general.scss */
+/* line 385, ../sass/general.scss */
 .production-list .production-tabs {
   margin-bottom: 20px;
 }
-/* line 382, ../sass/general.scss */
+/* line 387, ../sass/general.scss */
 .production-list .production-tabs ul {
   list-style: none;
   padding: 0 10px;
   margin: 0;
 }
-/* line 386, ../sass/general.scss */
+/* line 391, ../sass/general.scss */
 .production-list .production-tabs ul li {
   margin: 10px;
   margin-bottom: 20px;
   display: inline-block;
 }
-/* line 390, ../sass/general.scss */
+/* line 395, ../sass/general.scss */
 .production-list .production-tabs ul li a {
   padding: 8px 25px;
   background: transparent;
   border: 1px solid #fb3a64;
   color: #fb3a64;
 }
-/* line 395, ../sass/general.scss */
+/* line 400, ../sass/general.scss */
 .production-list .production-tabs ul li a.selected {
   background: #fb3a64;
   color: #fff;
 }
-/* line 399, ../sass/general.scss */
+/* line 404, ../sass/general.scss */
 .production-list .production-tabs ul li a:hover {
   background: #fb3a64;
   color: #fff;
 }
-/* line 407, ../sass/general.scss */
+/* line 412, ../sass/general.scss */
 .production-list .plays-list {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 410, ../sass/general.scss */
+/* line 415, ../sass/general.scss */
 .production-list .plays-list .play {
   width: calc(33.33% - 40px);
   margin: 20px;
@@ -488,31 +494,31 @@ body:not(.front) .main-container {
   -webkit-transition: all 0.3s ease-out 0s;
 }
 @media only screen and (max-width: 991px) {
-  /* line 410, ../sass/general.scss */
+  /* line 415, ../sass/general.scss */
   .production-list .plays-list .play {
     width: calc(50% - 40px);
   }
 }
 @media only screen and (max-width: 991px) {
-  /* line 410, ../sass/general.scss */
+  /* line 415, ../sass/general.scss */
   .production-list .plays-list .play {
     width: calc(50% - 30px);
     margin: 15px;
   }
 }
 @media only screen and (max-width: 540px) {
-  /* line 410, ../sass/general.scss */
+  /* line 415, ../sass/general.scss */
   .production-list .plays-list .play {
     width: 100%;
     margin: 0;
     margin-bottom: 30px;
   }
 }
-/* line 428, ../sass/general.scss */
+/* line 433, ../sass/general.scss */
 .production-list .plays-list .play:hover h2, .production-list .plays-list .play:hover p {
   color: #fb3a64;
 }
-/* line 432, ../sass/general.scss */
+/* line 437, ../sass/general.scss */
 .production-list .plays-list .play h2 {
   font-size: 1rem;
   font-weight: 700;
@@ -520,7 +526,7 @@ body:not(.front) .main-container {
   transition: all 0.3s ease-out 0s;
   -webkit-transition: all 0.3s ease-out 0s;
 }
-/* line 439, ../sass/general.scss */
+/* line 444, ../sass/general.scss */
 .production-list .plays-list .play p {
   font-size: 0.8rem;
   color: #707281;
@@ -528,7 +534,7 @@ body:not(.front) .main-container {
   -webkit-transition: all 0.3s ease-out 0s;
 }
 
-/* line 449, ../sass/general.scss */
+/* line 454, ../sass/general.scss */
 .content-popup {
   background: #070b2a;
   max-width: 800px;
@@ -536,7 +542,7 @@ body:not(.front) .main-container {
   padding: 30px;
   max-height: 95vh;
 }
-/* line 455, ../sass/general.scss */
+/* line 460, ../sass/general.scss */
 .content-popup .image {
   max-width: 290px;
   float: left;
@@ -544,81 +550,82 @@ body:not(.front) .main-container {
   padding-bottom: 15px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 455, ../sass/general.scss */
+  /* line 460, ../sass/general.scss */
   .content-popup .image {
     float: none;
     padding-right: 0;
   }
 }
-/* line 466, ../sass/general.scss */
+/* line 471, ../sass/general.scss */
 .content-popup .text h2 {
   font-size: 1.2rem;
   font-weight: 700;
 }
-/* line 470, ../sass/general.scss */
+/* line 475, ../sass/general.scss */
 .content-popup .text p {
   font-size: 0.9rem;
 }
-/* line 473, ../sass/general.scss */
+/* line 478, ../sass/general.scss */
 .content-popup .text .category, .content-popup .text .author, .content-popup .text .director {
   font-size: 0.8rem;
   margin-bottom: 0;
 }
-/* line 476, ../sass/general.scss */
+/* line 481, ../sass/general.scss */
 .content-popup .text .category.director, .content-popup .text .author.director, .content-popup .text .director.director {
   margin-bottom: 5px;
 }
 
-/* line 483, ../sass/general.scss */
+/* line 488, ../sass/general.scss */
 .copyright {
   margin-top: 20px;
   font-size: 0.8rem;
 }
 
-/* line 491, ../sass/general.scss */
+/* line 496, ../sass/general.scss */
 .team-list-main .team-box .text p:first-of-type {
   font-size: 0.8rem;
 }
 @media only screen and (max-width: 640px) {
-  /* line 491, ../sass/general.scss */
+  /* line 496, ../sass/general.scss */
   .team-list-main .team-box .text p:first-of-type {
     text-align: center;
   }
 }
 
-/* line 502, ../sass/general.scss */
+/* line 507, ../sass/general.scss */
 body p {
   text-align: justify !important;
 }
-/* line 505, ../sass/general.scss */
+/* line 510, ../sass/general.scss */
 body nav.navbar {
   padding: 5px 1rem;
 }
-/* line 508, ../sass/general.scss */
+/* line 513, ../sass/general.scss */
 body .navbar-brand {
   padding: 0;
 }
-/* line 511, ../sass/general.scss */
+/* line 516, ../sass/general.scss */
 body .logo {
   height: 80px;
   width: auto;
 }
 
-/* line 517, ../sass/general.scss */
+/* line 522, ../sass/general.scss */
 .thank-you {
   font-size: 1.3rem;
 }
 
-/* line 522, ../sass/general.scss */
-.panga h5 {
+/* line 527, ../sass/general.scss */
+.panga .panga-common-rules p {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 15px;
   position: relative;
   padding-left: 25px;
+  color: #ddd;
 }
-/* line 528, ../sass/general.scss */
-.panga h5:before {
+/* line 534, ../sass/general.scss */
+.panga .panga-common-rules p:before {
   content: "";
   font-size: 10px;
   width: 20px;
@@ -632,8 +639,8 @@ body .logo {
   left: 0;
   transition: all 0.5s;
 }
-/* line 542, ../sass/general.scss */
-.panga h5:after {
+/* line 548, ../sass/general.scss */
+.panga .panga-common-rules p:after {
   content: "";
   width: 10px;
   height: 5px;
@@ -645,44 +652,44 @@ body .logo {
   top: 6px;
   border-color: #fb3a64;
 }
-/* line 555, ../sass/general.scss */
+/* line 561, ../sass/general.scss */
 .panga .event-tabs {
   margin: 50px 0;
 }
-/* line 557, ../sass/general.scss */
+/* line 563, ../sass/general.scss */
 .panga .event-tabs h6 {
   margin-top: 20px;
   font-weight: 400;
   font-size: 1.2rem;
   color: #37948a;
 }
-/* line 562, ../sass/general.scss */
+/* line 568, ../sass/general.scss */
 .panga .event-tabs h6.second {
   color: #f7d677;
 }
-/* line 565, ../sass/general.scss */
+/* line 571, ../sass/general.scss */
 .panga .event-tabs h6.third {
   color: #f6a564;
 }
-/* line 569, ../sass/general.scss */
+/* line 575, ../sass/general.scss */
 .panga .event-tabs .tab-content {
   margin-top: 40px;
 }
-/* line 572, ../sass/general.scss */
+/* line 578, ../sass/general.scss */
 .panga .event-tabs ul.nav-tabs {
   border: 0 !important;
 }
-/* line 574, ../sass/general.scss */
+/* line 580, ../sass/general.scss */
 .panga .event-tabs ul.nav-tabs li {
   width: 33.33%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 574, ../sass/general.scss */
+  /* line 580, ../sass/general.scss */
   .panga .event-tabs ul.nav-tabs li {
     width: 100%;
   }
 }
-/* line 579, ../sass/general.scss */
+/* line 585, ../sass/general.scss */
 .panga .event-tabs ul.nav-tabs li a {
   border: 2px solid #37948a !important;
   text-align: center;
@@ -693,31 +700,73 @@ body .logo {
   color: #37948a;
 }
 @media only screen and (max-width: 767px) {
-  /* line 579, ../sass/general.scss */
+  /* line 585, ../sass/general.scss */
   .panga .event-tabs ul.nav-tabs li a {
     padding: 30px 0;
   }
 }
-/* line 592, ../sass/general.scss */
+/* line 598, ../sass/general.scss */
 .panga .event-tabs ul.nav-tabs li:nth-child(2) a {
   color: #f7d677;
   border: 2px solid #f7d677 !important;
 }
-/* line 598, ../sass/general.scss */
+/* line 604, ../sass/general.scss */
 .panga .event-tabs ul.nav-tabs li:nth-child(3) a {
   color: #f6a564;
   border: 2px solid #f6a564 !important;
 }
-/* line 603, ../sass/general.scss */
+/* line 609, ../sass/general.scss */
 .panga .event-tabs ul.nav-tabs li a.active {
   background: #37948a;
   color: #20353c;
 }
-/* line 606, ../sass/general.scss */
+/* line 612, ../sass/general.scss */
 .panga .event-tabs ul.nav-tabs li a.active.second {
   background: #f7d677;
 }
-/* line 609, ../sass/general.scss */
+/* line 615, ../sass/general.scss */
 .panga .event-tabs ul.nav-tabs li a.active.third {
   background: #f6a564;
+}
+
+/* line 625, ../sass/general.scss */
+.panga-poster img {
+  max-width: 500px;
+  width: 100%;
+  border: 5px solid #ddd;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 633, ../sass/general.scss */
+.panga-common-rules {
+  background: #232638;
+  padding: 15px;
+}
+/* line 636, ../sass/general.scss */
+.panga-common-rules .view-more-btn {
+  display: inline-block;
+  margin: 0 5px;
+  margin-top: 20px;
+}
+/* line 640, ../sass/general.scss */
+.panga-common-rules .view-more-btn a, .panga-common-rules .view-more-btn button {
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+/* line 648, ../sass/general.scss */
+.panga-paynow-popup .view-more-btn {
+  display: inline-block;
+  margin: 0 5px;
+  margin-top: 20px;
+}
+/* line 652, ../sass/general.scss */
+.panga-paynow-popup .view-more-btn a, .panga-paynow-popup .view-more-btn button {
+  border-radius: 20px;
+  font-size: 1rem;
+}
+/* line 657, ../sass/general.scss */
+.panga-paynow-popup img {
+  max-width: 230px;
+  width: 100%;
 }
